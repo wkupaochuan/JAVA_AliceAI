@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 数据库连接池,支持连接多种不同类型数据库 -->
+<dbm>
+	<logFile>log/dbm/log.output</logFile>
+	<pool>
+		<!-- 连接池名称 -->
+		<name>oracle</name>
+		<!-- 驱动 -->
+		<driver>oracle.jdbc.driver.OracleDriver</driver>
+		<!-- 数据库url -->
+		<url>jdbc:oracle:thin:@172.168.8.90:1521:orcl</url>
+		<!-- 用户名 -->
+		<user>cplatform20</user>
+		<!-- 密码 -->
+		<password>xgllpass</password>
+		<!-- 最大链接数 -->
+		<maxConn>3</maxConn>
+		<!-- 最小链接数 -->
+		<minConn>1</minConn>
+		<!-- 初始链接数 -->
+		<defConn>1</defConn>
+	</pool>
+</dbm>

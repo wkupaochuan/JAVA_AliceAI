@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="gb18030"?>
+<config name="sys">
+	<!-- 服务端口 -->
+	<port>9001</port>
+
+	<thread_count>100</thread_count>
+
+	<app>
+		<!-- max_app_time_out -->
+		<max_app_time_out>20000</max_app_time_out>
+	</app>
+
+	<memcached_url>172.168.8.22:11201</memcached_url>
+
+
+	<scene>
+		<url>http://172.168.8.22:9003/msg_center</url>
+	</scene>
+
+	<mail>
+		<host_name>mail.c-platform.com</host_name>
+		<user_name>pangyan</user_name>
+		<password>shitou911</password>
+		<charset>gb2312</charset>
+		<from>pangyan@c-platform.com</from>
+		<tos>pangyan@c-platform.com;wangsn@c-platform.com;chenbc@c-platform.com;wangboa@c-platform.com
+		</tos>
+		<app>
+			<subject>框应用接口异常告警</subject>
+			<msg><![CDATA[
+				框应用接口异常告警：
+				[msg]
+				M+
+				]]>
+			</msg>
+		</app>
+		<http>
+			<subject>HTTP请求数告警</subject>
+			<msg>
+			<![CDATA[
+				HTTP请求数告警：
+				[msg]
+				M+
+			]]>
+			</msg>
+		</http>
+	</mail>
+	
+	<nlpmail>
+		<nlp_mail_to>wangsn@c-platform.com,wangchen@c-platform.com,caodi@c-platform.com,dizt@c-platform.com,wangboa@c-platform.com,dengqy-cr@c-platform.com</nlp_mail_to>
+        <nlp_mail_cc>lijy@c-platform.com</nlp_mail_cc>
+		<nlp_mail_bodypart_path>./nlp/</nlp_mail_bodypart_path>
+		<nlp_mail_time>0 1 * * *</nlp_mail_time>
+	</nlpmail>
+	
+	<monitor>
+		<http_req_count>4000</http_req_count>
+	</monitor>
+	
+	<ruleLibrary>
+		<ruleLibrary_time>0 3 * * *</ruleLibrary_time>
+	</ruleLibrary>
+
+</config>              

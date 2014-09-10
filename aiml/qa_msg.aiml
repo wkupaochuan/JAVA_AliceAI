@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="GBK"?>
+<aiml>
+<!-- Copyright (c) 2007 ALICE A.I. Foundation, Inc. -->
+<!-- Last modified Seo 21, 2009, by Lichunlei -->
+<category>
+	<pattern>想念祖国</pattern>
+	<template>想查运势，你得告诉我你的星座呀，回复星座名称，如（摩羯座）试试看吧++。</template>
+</category>                         
+<category>
+	<pattern>退M+</pattern>
+	<template><star/>想查运势，你得告诉222222我你的星座呀，回复星座名称，如（摩羯座）试试看吧。</template>
+</category>                         
+<category>
+	<pattern>6SENTENCE4</pattern>
+	<template>想查运势11111111，你得告诉我你的星座呀，回复星座名称，如（摩羯座）试试看吧。</template>
+</category>
+<category>
+	<pattern>12345</pattern>
+	<template>想查运势1111113234234111，你得告诉我你的星座呀，回复星座名称，如（摩羯座）试试看吧。</template>
+</category>
+<category>
+	<pattern>TEST TEST</pattern>
+	<template>想查运势11111test111，你得告诉我你的星座呀，回复星座名称，如（摩羯座）试试看吧。</template>
+</category>
+<category>
+	<pattern>NBA我喜欢</pattern>
+	<template>想查运势111122221111，你得告诉我你的星座呀，回复星座名称，如（摩羯座）试试看吧。</template>
+</category>                           
+<category><pattern>日期*</pattern><template>格式 <date format="yyyy年MM月dd日 HH:mm a"/>.</template></category>                          
+<category><pattern>我</pattern><template>格式 <date format="yyyy年MM月dd日 HH:mm a"/>.</template></category>                          
+<category><pattern>星期几</pattern><template><date format="E"/>.</template></category>
+<category><pattern>今天是*</pattern><template><date format="EEE"/>.</template></category>
+<category><pattern>我的手机*</pattern><template>好吧, 你的手机号码是 <set name="phone">      <star/>     </set>.</template></category>
+<category><pattern>我的名字*</pattern><template><think><set name="name"><star/></set></think>你好, <get name="name"/>.</template></category>    
+<category><pattern>你还记的我*</pattern><template>你是<get name="name"/>, seeker.</template></category>
+<category><pattern>我不能*</pattern><template>你为什么不能做<set name="it"><person/></set>?</template></category>
+<category><pattern>我的输入</pattern> <template> 1:<input index="2"/></template></category>
+<category><pattern>我喜欢*</pattern><template>我也喜欢<star/></template></category>
+<category>
+	<pattern>聊什么呢</pattern>
+	<template>222</template>
+</category>
+<category>
+	<pattern>好</pattern>
+	<that>22*</that>
+	<template>33333333</template>
+</category>
+<category>
+	<pattern>好</pattern>
+	<template>111111111111</template>
+</category>
+
+<category>
+  	<pattern>*</pattern>
+    <template>你在说什么星星</template>
+  </category> 
+  
+  
+<category>
+	<pattern><enum>city</enum>*</pattern>
+	<template>
+  		<val index="1"/><val index="2"/>挺好的
+  	</template>
+</category>      
+
+<category>
+	<pattern><enum>city</enum>天气*</pattern>
+	<template>
+    	还不错吧，反正没下雨
+	</template>
+</category>
+
+<category>
+	<pattern>北京天气*</pattern>
+	<template>
+    	不知道哦
+	</template>
+</category>
+
+<category>
+	<pattern>*到*怎么走</pattern>
+	<template>
+    	不知道哦
+	</template>
+</category>
+
+
+
+<category>
+	<pattern>*</pattern>
+	<template>false</template>
+</category>
+
+</aiml>

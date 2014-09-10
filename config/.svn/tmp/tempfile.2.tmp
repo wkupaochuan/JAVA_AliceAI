@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="gb18030"?>
+<config name="framedata">
+	<!-- 艺龙旅游框数据 -->
+	<tour>
+		<fd_name>艺龙旅游网</fd_name>
+		<app_url>http://s.trip.elong.com/dest/telecom.html?cname=</app_url>
+		<rule>(_yilong_==$totle)||(_yilong_>=1&amp;&amp;_yilongkey_>=1)</rule>
+		<rank>40</rank>
+		<paramter>yilong</paramter>
+		<lexicon>yilong;yilongkey</lexicon>
+		<!-- 缓存一天 -->
+		<failure_time>86400</failure_time>
+<<<<<<< .mine
+		<!-- 如果不再公用模块中使用缓存机制才对该属性赋值，否则为空 -->
+		<cache_time>1</cache_time>
+=======
+		<!-- 如果不再公用模块中使用缓存机制才对该属性赋值，否则为设置为-1 -->
+		<cache_time>-1</cache_time>
+>>>>>>> .r5695
+		<!-- 测试用 ,该属性不能上生产环境
+		<test_id>7093</test_id> -->
+	</tour>
+	
+	<!-- 笑话框数据 -->
+	<joke>
+		<fd_name>小呆呆笑话</fd_name>
+		<app_url>./xml/res_joke.xml</app_url>
+		<rule>(_xiaohua_>=1)</rule>
+		<rank>45</rank>
+		<paramter>xiaohua</paramter>
+		<lexicon>xiaohua</lexicon>
+		<failure_time>-1</failure_time>
+		<!-- 缓存一天 -->
+		<cache_time>86400</cache_time>
+		<!-- 缓存一天 -->
+	</joke>
+
+
+</config>
